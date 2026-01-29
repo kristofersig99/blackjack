@@ -71,7 +71,7 @@ export default function Home() {
   }, [isDealerTurn, playerValue, dealerValue, deck, isActiveRound])
 
   useEffect(() => {
-    if (playerValue > 21 || dealerValue > 17) {
+    if (playerValue > 21 || dealerValue > 16) {
       setGameStatus(false);
     }
   }, [playerValue, dealerValue]);
